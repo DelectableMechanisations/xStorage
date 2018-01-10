@@ -4,8 +4,8 @@
     SetDiskOnlineMessage = Setting disk with {0} '{1}' online.
     SetDiskReadWriteMessage = Setting disk with {0} '{1}' to read/write.
     CheckingDiskPartitionStyleMessage = Checking disk with {0} '{1}' partition style.
-    InitializingDiskMessage = Initializing disk with {0} '{1}'.
-    DiskAlreadyInitializedMessage = Disk with {0} '{1}' is already initialized with GPT.
+    InitializingDiskMessage = Initializing disk with {0} '{1}' with {2} partition style.
+    DiskAlreadyInitializedMessage = Disk with {0} '{1}' is already initialized with {2}.
     CreatingPartitionMessage = Creating partition on disk with {0} '{1}' with drive letter '{2}' using {3}.
     FormattingVolumeMessage = Formatting the volume as '{0}'.
     SuccessfullyInitializedMessage = Successfully initialized '{0}'.
@@ -18,7 +18,6 @@
     DiskNotFoundMessage = Disk with {0} '{1}' was not found.
     DiskNotOnlineMessage = Disk with {0} '{1}' is not online.
     DiskReadOnlyMessage = Disk with {0} '{1}' is readonly.
-    DiskNotGPTMessage = Disk with {0} '{1}' is initialized with '{2}' partition style. GPT required.
     DriveLetterNotFoundMessage = Drive {0} was not found.
     SizeMismatchMessage = Partition assigned to drive {0} has size {1}, which does not match expected size {2}.
     AllocationUnitSizeMismatchMessage = Volume assigned to drive {0} has allocation unit size {1} KB does not match expected allocation unit size {2} KB.
@@ -26,9 +25,6 @@
     DriveLabelMismatch = Volume assigned to drive {0} label '{1}' does not match expected label '{2}'.
     PartitionAlreadyAssignedMessage = Partition '{1}' is already assigned as drive {0}.
     MatchingPartitionNotFoundMessage = Disk with {0} '{1}' already contains partitions, but none match required size.
-    MatchingPartitionNoSizeMessage = Disk with {0} '{1}' already contains partitions, but size parameter is not specified.
-    SearchForVolumeMessage = Searching for {3} volume with no drive letter on partition '{2}' disk with {0} '{1}'.
-    VolumeFoundMessage = Found {3} volume with no drive letter on partition '{2}' disk with {0} '{1}'.
     MatchingPartitionFoundMessage = Disk with {0} '{1}' already contains partitions, and partition '{2}' matches required size.
     DriveNotFoundOnPartitionMessage = Disk with {0} '{1}' does not contain a partition assigned to drive letter '{2}'.
     ClearingDisk = Clearing disk with {0} '{1}' of all existing partitions and volumes.
@@ -38,4 +34,5 @@
     SizeMismatchCorrection = Switch AllowDestructive is specified. Attempting to resize partition {0} from {1} to {2}
     FreeSpaceViolationError = Attempted to resize partition {0} from {1} to {2} while maximum allowed size was {3}
     ResizeRefsNotPossible = Skipping resize of {0} from {1} to {2}. Resizing ReFS partitions is currently not possible.
+    PartitionStyleMismatch = Volume assigned to drive {0} label '{1}' does not match expected label '{2}'.$DiskIdType, $DiskId, $Disk.PartitionStyle
 '@
